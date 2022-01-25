@@ -1,0 +1,18 @@
+body{
+    background-color: gainsboro;
+}
+.App{
+    text-align: center;
+    
+}
+.App img{
+    border-radius: 50%;
+    
+}
+.App button{
+    float: right;
+    background-color: black;
+    color:blanchedalmond;
+    font-size: 30px;
+    
+}

@@ -1,0 +1,266 @@
+.bg-img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url("img/bit.jpg") center center no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+ .cen {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 40px;
+      
+      margin-top:-490px;
+      border: 2px solid white;
+      border-width: 5px;
+      padding: 20px;
+    
+      color: brown;
+      }
+  .bg-img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: 0.2;
+  }
+
+  .sec{
+      margin-top: 300px;
+  }
+  .cards{
+      justify-content: center;
+      display: flex;
+  }
+  .card{
+      text-align: center;
+      display: grid;
+      margin: 35px;
+      background-color: gray;
+      padding: 30px;
+      width: 220px;
+  }
+  .card:hover{
+      background-color: rgb(189, 180, 180);
+  }
+  .card span {
+      text-align: center;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+
+
+  section{
+    font-family: 'Playfair Display', serif;
+   display: grid;
+   background-color: #f4f4f4;
+   align-content: center;
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   min-height: 90vh;
+   width: 85vw;
+   margin: 0 auto;
+}
+.image{
+   background: url("img/comp.jpg") center/cover no-repeat;
+   margin-bottom: 30px;
+}
+.content{
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+.content h2{
+   text-transform: uppercase;
+
+   font-size: 36px;
+   letter-spacing: 6px;
+   opacity: 0.9;
+}
+.content span{
+   height: 0.5px;
+   width: 80px;
+   background: #777;
+   margin: 30px 0;
+}
+.content p{
+   padding-bottom: 15px;
+   font-weight: 600;
+   opacity: 0.7;
+   width: 60%;
+   text-align: center;
+   margin: 0 auto;
+   line-height: 1.7;
+}
+  
+
+
+/*****************/
+
+@media(max-width: 992px){
+   section{
+       grid-template-columns: 1fr;
+       width: 100%;
+   }
+   .image{
+       height: 100vh;
+   }
+   .content{
+       height: 100vh;
+   }
+   .content h2{
+       font-size: 20px;
+       margin-top: 50px;
+   }
+   .content span{
+       margin: 20px 0;
+   }
+   .content p{
+       font-size: 14px;
+   }
+}
+
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #161a2b;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+  
+
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(24, 22, 22);
+  }
+  
+  .todo-input::placeholder {
+    color: #2e2525;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .todo-input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .todo-button.edit {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .todo-row:nth-child(4n + 1) {
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+  }
+  
+  .todo-row:nth-child(4n + 2) {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 12, 241, 1) 0%,
+      rgba(250, 0, 135, 1) 100%
+    );
+  }
+  
+  .todo-row:nth-child(4n + 3) {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
+
+
